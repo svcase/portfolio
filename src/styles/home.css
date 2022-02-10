@@ -1,0 +1,85 @@
+h1 {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.openSection {
+  margin-bottom: 5%;
+}
+
+.contactSection {
+  margin-bottom: 5%;
+}
+
+.emailBtn {
+  margin-top: 5%;
+}
+
+.emailLink {
+  background-color: #A7C7E7;
+  color: white;
+  padding: 0.6rem 0.7rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.exampleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.exampleList {
+  text-align: left;
+  margin-top: 0;
+  width: 100%;
+}
+
+li {
+  margin: 3%;
+}
+
+@media (max-width: 767.98px) {
+  .mainContainer {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  h1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .openSection {
+    margin-bottom: 10%;
+  }
+
+  .contactSection {
+    margin-bottom: 10%;
+  }
+
+  .emailBtn {
+    margin-top: 7%;
+  }
+
+  .exampleList {
+    width: 100%;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+}
