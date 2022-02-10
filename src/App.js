@@ -13,7 +13,7 @@ import {
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/portfolio">
 
         <Routes>
           <Route path="/" element={<Home />} />
