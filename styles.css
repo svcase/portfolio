@@ -134,6 +134,10 @@ footer {
 
 @media (max-width: 980px) {
 
+    .header {
+        flex-direction: column;
+    }
+
     .cards {
         flex-direction: column;
     }
@@ -145,19 +149,23 @@ footer {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .langs {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .contact {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
     }
 }
 
