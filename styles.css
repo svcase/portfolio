@@ -75,11 +75,19 @@ h2 {
 
 .cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
     margin: 5% auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto auto 3% auto;
 }
 
 h3 {
@@ -91,7 +99,7 @@ h3 {
 .card {
     position: relative;
     background-color: rgb(212, 234, 255);
-    width: 31%;
+    width: 47%;
     box-shadow: 0.4em 0.4em 0.4em rgb(194, 194, 194);
     border-radius: 5px;
 }
@@ -136,16 +144,23 @@ footer {
 
     .cards {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: auto;
     }
 
     .card {
         margin-bottom: 8%;
-        width: 70%;
+        width: 78%;
         box-shadow: 0.8em 0.8em 0.8em rgb(194, 194, 194);
     }
 
     h1 {
         font-size: 2rem;
+        font-weight: 400;
     }
 
     h2 {
@@ -154,6 +169,10 @@ footer {
 
     .langs {
         font-size: 1.1rem;
+    }
+
+    .hero {
+        width: 33%;
     }
 
     .contact {
