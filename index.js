@@ -14,33 +14,37 @@ thirdCard.addEventListener('touchstart', widjiText);
 fourthCard.addEventListener('touchstart', rpsText);
 
 function lizaText() {
-    let originalText = firstCard.firstElementChild.innerText;
+    const para = document.querySelector('.liza-text');
+    let originalText = para.innerText;
     let text = 'HTML, CSS, JavaScript, basic React';
-    firstCard.firstElementChild.innerText = text;
-    firstCard.addEventListener('touchend', ()=>{firstCard.firstElementChild.innerText = originalText});
-    firstCard.addEventListener('mouseout', ()=>{firstCard.firstElementChild.innerText = originalText});
+    para.innerText = text;
+    firstCard.addEventListener('touchend', ()=>{para.innerText = originalText});
+    firstCard.addEventListener('mouseout', ()=>{para.innerText = originalText});
 }
 
 function ticText() {
-    let originalText = secondCard.firstElementChild.innerText;
+    const para = document.querySelector('.tic-text');
+    let originalText = para.innerText;
     let text = 'Vanilla JavaScript';
-    secondCard.firstElementChild.innerText = text;
-    secondCard.addEventListener('touchend', ()=>{secondCard.firstElementChild.innerText = originalText});
-    secondCard.addEventListener('mouseout', ()=>{secondCard.firstElementChild.innerText = originalText});
+    para.innerText = text;
+    secondCard.addEventListener('touchend', ()=>{para.innerText = originalText});
+    secondCard.addEventListener('mouseout', ()=>{para.innerText = originalText});
 }
 
 function widjiText() {
-    let originalText = thirdCard.firstElementChild.innerText;
+    const para = document.querySelector('.widji-text');
+    let originalText = para.innerText;
     let text = 'HTML, CSS, JavaScript, basic React';
-    thirdCard.firstElementChild.innerText = text;
-    thirdCard.addEventListener('touchend', ()=>{thirdCard.firstElementChild.innerText = originalText});
-    thirdCard.addEventListener('mouseout', ()=>{thirdCard.firstElementChild.innerText = originalText});
+    para.innerText = text;
+    thirdCard.addEventListener('touchend', ()=>{para.innerText = originalText});
+    thirdCard.addEventListener('mouseout', ()=>{para.innerText = originalText});
 }
 
 function rpsText() {
-    let originalText = fourthCard.firstElementChild.innerText;
+    const para = document.querySelector('.rps-text');
+    let originalText = para.innerText;
     let text = 'Vanilla Javascript';
-    fourthCard.firstElementChild.innerText = text;
-    fourthCard.addEventListener('touchend', ()=>{fourthCard.firstElementChild.innerText = originalText});
-    fourthCard.addEventListener('mouseout', ()=>{fourthCard.firstElementChild.innerText = originalText});
+    para.innerText = text;
+    fourthCard.addEventListener('touchend', ()=>{para.innerText = originalText});
+    fourthCard.addEventListener('mouseout', ()=>{para.innerText = originalText});
 }

@@ -2,65 +2,128 @@
 <html lang="eng">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4acc9e5e81.js" crossorigin="anonymous"></script>
     <title>Sam Case Web Development</title>
   </head>
   <body>
+
     <header>
-      <div class="hero-left">
-        <h1>Sam Case</h1>
-        <h2>Front-End Developer</h2>
-      </div>
-      <div class="hero-ctr">
-        <p class="langs">HTML</p>
-        <p class="langs">CSS</p>
-        <p class="langs">JavaScript</p>
-        <p class="langs">React</p>
-      </div>
-      <div class="hero">
-        <a class="contact" href="mailto:samcasedev@gmail.com">Contact Sam</a>
-      </div>
+      <nav class="navbar" role="navigation">
+        <div class="navbar-brand">
+          <div class="navbar-item">
+            <div class="title is-flex-direction-column">
+              <h1 class="is-size-2">Sam Case</h1>
+              <h2 class="is-size-5">Front-End Developer</h2>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <div class="navbar-item">
+              <p class="button is-danger is-outlined is-size-7" disabled style="opacity: 1">HTML</p>
+            </div>
+            <div class="navbar-item">
+              <p class="button is-danger is-outlined is-size-7" disabled style="opacity: 1">CSS</p>
+            </div>
+            <div class="navbar-item">
+              <p class="button is-danger is-outlined is-size-7" disabled style="opacity: 1">JavaScript</p>
+            </div>
+            <div class="navbar-item">
+              <p class="button is-danger is-outlined is-size-7" disabled style="opacity: 1">React</p>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a class="button is-info is-medium contact" href="mailto:samcasedev@gmail.com">Contact Sam</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <div class="cards">
+    <section>
+      <div class="container is-justify-content-center is-align-items-center">
+        <div class="columns mt-6">
 
-      <div class="row">
-        <div class="card liza">
-          <h3>Liza Darlington Art</h3>
-          <div class="site">
-            <img class="img" src="images/liza.jpg" />
-          </div>
-          <a href="https://lizadarlington.com/" target="_blank"><span class="link"></span></a>
-        </div>
-        <div class="card widji">
-          <h3>Widji Game</h3>
-          <div class="site">
-            <img class="img" src="images/widji.jpg" />
-          </div>
-          <a href="https://svcase.github.io/widji-game/" target="_blank"><span class="link"></span></a>
+            <div class="column card mx-5 liza">
+                <div class="card-content">
+                  <p class="title is-4 liza-text">Liza Darlington Art</p>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="images/liza.jpg" alt="Liza D Art">
+                  </figure>
+                </div>
+                <a href="https://lizadarlington.com/" target="_blank"><span class="link"></span></a>
+            </div>
+
+            <div class="column card mx-5 widji">
+              <div class="card-content">
+                <p class="title is-4 widji-text">Widji Game</p>
+              </div>
+              <div class="card-image">
+                <figure class="image">
+                  <img src="images/widji.jpg" alt="Widji Game">
+                </figure>
+              </div>
+              <a href="https://svcase.github.io/widji-game/" target="_blank"><span class="link"></span></a>
+            </div>
+
         </div>
       </div>
+    </section>
 
-      <div class="row">
-        <div class="card rps">
-          <h3>Rock, Paper, Scissors</h3>
-          <div class="site">
-            <img class="img" src="images/rps.jpg" />
-          </div>
-          <a href="https://svcase.github.io/rps/" target="_blank"><span class="link"></span></a>
-        </div>
-        <div class="card tic-tac">
-          <h3>Tic-Tac-Toe</h3>
-          <div class="site">
-            <img class="img" src="images/tictac.jpg" />
-          </div>
-          <a href="https://svcase.github.io/tic-tac-toe/" target="_blank"><span class="link"></span></a>
-        </div>
+    <section>
+      <div class="container">
+        <div class="columns mt-6 is-justify-content-center is-align-items-center">
 
-    </div>
+            <div class="column card mx-5 mt-4 rps">
+                <div class="card-content">
+                  <p class="title is-4 rps-text">Rock, Paper, Scissors</p>
+                </div>
+                <div class="card-image">
+                  <figure class="image">
+                    <img src="images/rps.jpg" alt="Rock paper Scissors">
+                  </figure>
+                </div>
+                <a href="https://svcase.github.io/rps/" target="_blank"><span class="link"></span></a>
+            </div>
+
+            <div class="column card mx-5 mt-4 tic-tac">
+              <div class="card-content">
+                <p class="title is-4 tic-text">Tic-Tac-Toe</p>
+              </div>
+              <div class="card-image">
+                <figure class="image">
+                  <img src="images/tictac.jpg" alt="tic-tac-toe">
+                </figure>
+              </div>
+              <a href="https://svcase.github.io/tic-tac-toe/" target="_blank"><span class="link"></span></a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered is-large is-justify-content-center is-align-items-center">
+        <a href="mailto:samcasedev@gmail.com">
+          <span class="icon mx-5">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/samcase/" target="_blank">
+          <span class="icon mx-5">
+            <i class="fa-brands fa-linkedin"></i>
+          </span>
+        </a>
+      </div>
+    </footer>
 
     <script src="index.js"></script>
   </body>
