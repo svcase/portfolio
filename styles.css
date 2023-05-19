@@ -1,3 +1,7 @@
+body {
+    background-color: #24305e;
+    color: #ffffff;
+}
 
 header {
     border-bottom: 3px solid rgb(164, 163, 163, 0.5);
@@ -6,6 +10,7 @@ header {
 }
 
 .navbar {
+    background-color: #24305e;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,31 +20,44 @@ header {
     margin-right: 3%;
 }
 
+.lang {
+    color:#f76c6c;
+    font-weight: 600;
+    padding: 0.33rem 0.75rem;
+    border: 1.5px solid #f76c6c;
+    border-radius: 4px;
+}
+
 h1 {
     font-family: 'Rubik', sans-serif;
+    color: #ffffff;
 }
 
 h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
+    color: #ffffff;
+}
+
+.contact {
+    background-color: #a8d0e6;
 }
 
 .contact:hover {
     border-color: #70cdfc;
-    box-shadow: 0.2em 0.2em 0.2em 0.2em #70cdfc;
+    box-shadow: 0.15em 0.15em 0.15em 0.15em grey;
     transform: translateY(-0.25em);
     cursor: pointer;
 }
 
 .card {
-    background-color: rgb(218, 237, 255);
-    box-shadow: 0.4em 0.4em 0.4em rgb(194, 194, 194);
+    background-color: #a8d0e6;
     border-radius: 5px;
 }
 
 .card:hover {
-    border-color: #70cdfc;
-    box-shadow: 0.5em 0.5em 0.5em #70cdfc;
+    border-color: #ffffff;
+    box-shadow: 0.5em 0.5em 0.5em grey;
     transform: translateY(-0.25em);
     cursor: pointer;
 }
@@ -53,8 +71,13 @@ h2 {
     z-index: 1;
 }
 
-footer {
-    margin-top: 5%;
+.footer {
+    margin-top: 10%;
+    background-color: #374785;
+}
+
+.fa-brands, .fa-envelope {
+    color: #a8d0e6;
 }
 
 @media (max-width: 1023.95px) {
