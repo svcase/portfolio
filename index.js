@@ -1,15 +1,15 @@
 let firstCard = document.querySelector('.liza');
-let secondCard = document.querySelector('.tic-tac');
+let secondCard = document.querySelector('.guess');
 let thirdCard = document.querySelector('.widji');
 let fourthCard = document.querySelector('.rps');
 
 firstCard.addEventListener('mouseover', lizaText);
-secondCard.addEventListener('mouseover', ticText);
+secondCard.addEventListener('mouseover', guessText);
 thirdCard.addEventListener('mouseover', widjiText);
 fourthCard.addEventListener('mouseover', rpsText);
 
 firstCard.addEventListener('touchstart', lizaText);
-secondCard.addEventListener('touchstart', ticText);
+secondCard.addEventListener('touchstart', guessText);
 thirdCard.addEventListener('touchstart', widjiText);
 fourthCard.addEventListener('touchstart', rpsText);
 
@@ -22,10 +22,10 @@ function lizaText() {
     firstCard.addEventListener('mouseout', ()=>{para.innerText = originalText});
 }
 
-function ticText() {
-    const para = document.querySelector('.tic-text');
+function guessText() {
+    const para = document.querySelector('.guess-text');
     let originalText = para.innerText;
-    let text = 'Vanilla JavaScript';
+    let text = 'Javascript, Node, Express, APIs';
     para.innerText = text;
     secondCard.addEventListener('touchend', ()=>{para.innerText = originalText});
     secondCard.addEventListener('mouseout', ()=>{para.innerText = originalText});
