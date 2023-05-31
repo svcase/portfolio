@@ -1,6 +1,6 @@
 body {
-    background-color: #24305e;
-    color: #ffffff;
+    background-color: #bad8e8;
+    color: #f2f2f2;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 }
 
 .navbar {
-    background-color: #24305e;
+    background-color: #bad8e8;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,7 +21,7 @@ header {
 }
 
 .lang {
-    color:#f76c6c;
+    color:hsl(0, 90%, 60%);
     font-weight: 600;
     padding: 0.33rem 0.75rem;
     border: 1.5px solid #f76c6c;
@@ -30,34 +30,36 @@ header {
 
 h1 {
     font-family: 'Rubik', sans-serif;
-    color: #ffffff;
+    color: #272727;
 }
 
 h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
-    color: #ffffff;
+    color: #272727;
 }
 
 .contact {
-    background-color: #a8d0e6;
+    background-color: #374785;
+    color: #f2f2f2;
+    border-color: #374785;
 }
 
 .contact:hover {
-    border-color: #70cdfc;
-    box-shadow: 0.15em 0.15em 0.15em 0.15em grey;
+    box-shadow: 0.15em 0.15em 0.30em rgba(140, 140, 140, 0.8);
     transform: translateY(-0.25em);
     cursor: pointer;
+    color: #f2f2f2;
 }
 
 .card {
-    background-color: #a8d0e6;
-    border-radius: 5px;
+    background-color: #e1f4ff;
+    border-radius: 12px;
 }
 
 .card:hover {
-    border-color: #ffffff;
-    box-shadow: 0.5em 0.5em 0.5em grey;
+    border-color: #f2f2f2;
+    box-shadow: 0.5em 0.5em 1em rgb(140, 140, 140, 0.8);
     transform: translateY(-0.25em);
     cursor: pointer;
 }
@@ -71,21 +73,36 @@ h2 {
     z-index: 1;
 }
 
+.card-content {
+    padding-top: 1rem;
+    padding-left: 0.25rem;
+}
+
+img {
+    border-radius: 5px;
+}
+
 .footer {
     margin-top: 10%;
-    background-color: #374785;
+    background-color: #e1f4ff;
 }
 
 .fa-brands, .fa-envelope {
-    color: #a8d0e6;
+    color: #374785;
 }
 
 @media (max-width: 1023.95px) {
 
 
+.bottom-row {
+    margin-top: 8%;
 }
 
-@media (max-width: 768px) {
+}
+
+@media (max-width: 767.98px) {
     
-    
+.bottom-row {
+    margin-top: 15%;
+}
 }
